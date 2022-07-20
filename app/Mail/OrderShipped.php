@@ -33,6 +33,6 @@ class OrderShipped extends Mailable
             ->to('to@example.com')
             ->subject('Your order was shipped')
 //            ->attachFromStorage('image/image.png')
-            ->view('email.order_shipped');
+            ->markdown('email.order_shipped');
     }
 }
